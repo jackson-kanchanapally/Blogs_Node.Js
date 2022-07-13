@@ -1,0 +1,19 @@
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="blogs content">
+        <h1>All Blogs</h1>
+        <hr/>
+        <% if(blogs.length>0) { %>
+            <% blogs.map(blog=>{ %>
+                <h2><%= blog.title%></h2>
+                <p><%=blog.snippet%></p>
+                <hr/>
+            <%})%>
+        <% } else {%>
+            <h2>Nothing to Display</h2>
+            <%}%>
+    </div>
+</body>
+</html>

@@ -35,6 +35,9 @@
     nav h1{
       font-size: 3em;
     }
+    .t{
+      color:rgb(239, 68, 102);
+    }
     nav p, nav a{
       color: #777;
       font-weight: 300;
@@ -89,6 +92,7 @@
     .create-blog form{
       max-width: 400px;
       margin: 0 auto;
+
     }
     .create-blog input,
     .create-blog textarea{
@@ -100,6 +104,7 @@
     .create-blog label{
       display: block;
       margin-top: 24px;
+      color:whitesmoke;
     }
     textarea{
       height: 120px;
@@ -108,8 +113,13 @@
       margin-top: 20px;
       background: crimson;
       color: white;
-      padding: 6px;
+      padding: 6px 9px;
       border: 0;
+      border-radius: 10px;
       font-size: 1.2em;
       cursor: pointer;
+    }
+    button:hover{
+      background:red;
+      padding:7px 10px;
     }
